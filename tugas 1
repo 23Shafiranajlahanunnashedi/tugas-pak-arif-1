@@ -1,0 +1,27 @@
+class MyClass:
+    def _init_(self):
+        self.__private_prop1 = None
+        self.__private_prop2 = None
+
+    def set_private_prop1(self, value):
+        self.__private_prop1 = value
+
+    def get_private_prop1(self):
+        return self.__private_prop1
+
+    def set_private_prop2(self, value):
+        self.__private_prop2 = value
+
+    def get_private_prop2(self):
+        return self.__private_prop2
+
+
+obj = MyClass()
+
+# Mengakses private property menggunakan setter
+obj.set_private_prop1(10)
+obj.set_private_prop2("Hello World")
+
+# Mengakses private property menggunakan getter
+print(obj.get_private_prop1())
+print(obj.get_private_prop2())
